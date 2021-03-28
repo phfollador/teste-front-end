@@ -2,6 +2,19 @@
 
 # Teste front-end
 
+Teste realizado para o processo seletivo para deselvolvedor front-end.
+
+
+
+## Para utilizar...
+
+### Clone o repositório através do link: https://github.com/phfollador/teste-front-end.git
+
+### Instale as dependências através do comando: npm install
+
+
+# Teste front-end
+
 Teste aos candidatos as vagas de desenvolvimento Front-end da UpperSoft.
 
 
