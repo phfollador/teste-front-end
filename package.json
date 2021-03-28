@@ -1,0 +1,22 @@
+{
+  "name": "teste-front-end",
+  "version": "1.0.0",
+  "description": "![UpperSoft](https://raw.githubusercontent.com/uppersoft/teste-front-end/master/assets/logo-readme.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phfollador/teste-front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phfollador/teste-front-end/issues"
+  },
+  "homepage": "https://github.com/phfollador/teste-front-end#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

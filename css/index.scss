@@ -1,0 +1,295 @@
+//DEFININDO AS FONTES
+$font: "Helvetica Neue";
+
+//CORES
+$cor-primary: #174DBA;
+$cor-white: #FFFFFF;
+$cor-gray: #EFF0F3;
+$cor-dark: #505050;
+
+//LAYOUT
+$mobile: 500px;
+$desktop: 600px;
+
+@media (max-width: $mobile){
+    //CABEÇALHO
+    $header-height:3.75em;
+
+    //LOGO
+    $logo-width: 9.375em;
+    $logo-height: 1.875em;
+
+    //CABEÇALHO
+    $header-height: 3.75em;
+
+    //LOGO
+    $logo-width: 9.375em;
+    $logo-height: 1.875em;
+
+    //CAIXA DE LOGIN
+    $box-height: 23em;
+    $box-width: 25em;
+
+    // TEXTO
+    .title-primary-lg {
+        font-family: $font;
+        color: $cor-primary;
+        font-weight: Bold;
+        font-size: 3em;
+    }
+
+    .title-primary {
+        font-family: $font;
+        color: $cor-primary;
+        font-weight: Bold; 
+        font-size: 2em;
+    }
+
+    .content-gray-lg {
+        font-family: $font;
+        color: $cor-gray;
+        font-size: 1.375em;
+    }
+
+    .content-gray {
+        font-family: $font;
+        color: $cor-gray;
+        font-size: 1em;
+    }
+
+    .content-primary {
+        font-family: $font;
+        color: $cor-primary;
+        font-size: 1em;
+    }
+
+    .content-dark {
+        font-family: $font;
+        color: $cor-dark;
+        font-size: 1em;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        font-family: $font;
+        font-size: 16px;
+        background-color: #EFF0F3;
+    }
+
+    //CABEÇALHO
+    header {
+        position: fixed;
+        background-color: $cor-primary;
+        height: $header-height * 2;
+    }
+
+    .header-logo {
+        position: relative;
+        width: $logo-width*1.5;
+        height: $logo-height*1.5;
+        margin-top: ($header-height*2 - $logo-height*2)/1.5;
+    }
+
+    //CENTRALIZAR
+    .text-center {
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    //CAIXA DE LOGIN
+    #box {
+        background: $cor-white;
+        border-radius: 0.5em;
+        height: $box-height;
+        width: $box-width;
+        margin: 10.5em auto auto auto;
+    }
+
+    #box-title {
+        text-align: center;
+        margin-top: -0.5em;
+    }
+
+    #submit-btn {
+        background: $cor-primary;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        color: white;
+        font-family: $font;
+        font-weight: bold;
+        height: 3em;
+        margin: 0 auto;
+        margin-top: 3em;
+        width: 20em;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label {
+        margin-left: 4.1em;
+        margin-top: 0.275em;
+        margin-bottom: 0.2em
+    }
+
+    .form-content {
+        background-color: $cor-white;
+        width: 19.5em;
+        border-color: $cor-primary;
+        border-radius: 0.5em;
+        height: 2.5em;
+        margin: 0 auto;
+        margin-top: -1em;
+    }
+}
+
+@media (min-width: $desktop) {
+    //CABEÇALHO
+    $header-height: 3.75em;
+
+    //LOGO
+    $logo-width: 9.375em;
+    $logo-height: 1.875em;
+
+    //CAIXA DE LOGIN
+    $box-height: 23em;
+    $box-width: 25em;
+
+    //TEXTO
+    .title-primary-lg {
+        font-family: $font;
+        color: $cor-primary;
+        font-weight: Bold;
+        font-size: 3em;
+    }
+
+    .title-primary {
+        font-family: $font;
+        color: $cor-primary;
+        font-weight: Bold; 
+        font-size: 2em;
+    }
+
+    .content-gray-lg {
+        font-family: $font;
+        color: $cor-gray;
+        font-size: 1.375em;
+    }
+
+    .content-gray {
+        font-family: $font;
+        color: $cor-gray;
+        font-size: 1em;
+    }
+
+    .content-primary {
+        font-family: $font;
+        color: $cor-primary;
+        font-size: 1em;
+    }
+
+    .content-dark {
+        font-family: $font;
+        color: $cor-dark;
+        font-size: 1em;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        font-family: $font;
+        font-size: 16px;
+        background-color: #EFF0F3;
+    }
+
+    // CABEÇALHO
+    header {
+        position: fixed;
+        background-color: $cor-primary;
+        width: 100%;
+        height: $header-height;
+    }
+
+    .header-logo {
+        position: relative;
+        width: $logo-width;
+        height: $logo-height;
+        margin-top: ($header-height - $logo-height)/2;
+    }
+
+    // CENTRLIZAR TEXTO
+    .text-center {
+        text-align: center;
+    }
+
+    // ADAPTAÇÃO DO DISPLAY
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // CAIXA DE LOGIN
+    #box {
+        background: $cor-white;
+        border-radius: 0.5em;
+        height: $box-height;
+        width: $box-width;
+        margin: 12em auto auto auto;
+    }
+
+    #box-title {
+        text-align: center;
+        margin-top: -0.5em;
+    }
+
+    #submit-btn {
+        background: $cor-primary;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        color: white;
+        font-family: $font;
+        font-weight: bold;
+        height: 3em;
+        margin: 0 auto;
+        margin-top: 3em;
+        width: 20em;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label {
+        margin-left: 4.1em;
+        margin-top: 0.275em;
+        margin-bottom: 0.2em
+    }
+
+    .form-content {
+        background-color: $cor-white;
+        width: 19.5em;
+        border-color: $cor-primary;
+        border-radius: 0.5em;
+        height: 2.5em;
+        margin: 0 auto;
+        margin-top: -1em;
+    }
+}

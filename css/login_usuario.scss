@@ -1,0 +1,170 @@
+// DEFININDO A FONT
+$font: "Helvetica Neue";
+
+// DEFININDO AS CORES
+$cor-primary: #174dba;
+$cor-gray: #eff0f3;
+$cor-white: #ffffff;
+$cor-dark: #505050;
+
+//LAYOUT
+$mobile: 500px;
+$desktop: 600px;
+
+//BODY
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $cor-gray;
+  color: $cor-primary;
+  -webkit-font-smothing: antialised;
+  margin: auto;
+}
+
+body,
+input,
+button {
+  font-family: $font;
+  font-size: 16px;
+}
+
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.usersPage {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  width: 100%;
+}
+
+.adminUsers {
+  max-width: 1600px;
+}
+
+header {
+  background: $cor-primary;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .logo {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+h1 {
+  font-family: $font;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.adminUsers {
+  h1 {
+    font-family: $font;
+    position: absolute;
+    top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.userBox {
+  display: flex;
+  flex-direction: column;
+  background-color: $cor-white;
+  border-radius: 10px;
+
+  .userImg {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background: $cor-white;
+  }
+
+  p {
+    font-family: $font;
+    margin: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: $cor-primary;
+  }
+
+  span {
+    margin: auto;
+    text-align: center;
+    color: $cor-dark;
+    margin-bottom: 70px;
+  }
+}
+
+// BOTÃO EDITAR
+button {
+  cursor: pointer;
+  border: none;
+  outline: inherit;
+}
+
+.editButton {
+  margin-left: auto;
+  background: none;
+  color: inherit;
+
+  img {
+    margin: 15px;
+  }
+}
+
+
+//ORGANIZANDO AS CAIXAS NO MOMENTO DA LISTAGEM
+.userList {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 30px;
+
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  @media (max-width: 300px) {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+// RODAPÉ
+footer {
+  color: $cor-dark;
+  text-align: end;
+  padding: 0px 20px 50px 50px;
+  grid-column: 1/-1;
+}

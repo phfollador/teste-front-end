@@ -1,0 +1,54 @@
+<!-- PÁGINA HTML REFERENTE À TELA DE LOGIN DOS USUÁRIOS -->
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- TÍTULO NA ABA -->
+        <title>UpperSoft</title>
+        <!-- ÍCONE DA ABA (RETIREI DO SITE DA EMPRESA) -->
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <!-- REFERENCIANDO O CSS DA PÁGINA -->
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+    </head>
+
+    <body>
+        <!-- DIV QUE DEFINE O CABEÇALHO DA PÁGINDA CONTENDO O LOGO SEM FUNDO -->
+        <div>
+            <header class="text-center">
+                <img src="assets/logo-uppersoft.svg" class="header-logo"/>
+            </header>
+        </div>
+
+        <!-- DIV QUE DEFINE A CAIXA QUE COMPORTARÁ O FORMULÁRIO DE LOGIN -->
+        <div id="box">
+            <div>
+                <div id="box-title">
+                    <h2 class="title-primary">Acessar</h2>
+                </div>
+    
+                <!-- FORMULÁRIO DE LOGIN -->
+                <form method="post" class="form" id="loginForm">
+                    <label for="user_email" class="form-label">
+                        <h2 class="content-primary">E-mail</h2>
+                    </label>
+                    <!-- ENTRADA DO EMAIL -->
+                    <input id="user_email" class="form-content" type="email" name="email" placeholder="email@uppersoft.com.br" required/>
+    
+                    <label for="user_senha" class="form-label">
+                        <h2 class="content-primary">Senha</h2>
+                    </label>
+                    <!-- ENTRADA DA SENHA -->
+                    <input id="user_senha" class="form-content" type="password" name="senha" placeholder="senha" required/>
+    
+                    <!-- BOTÃO -->
+                    <input id="submit-btn" onclick="postRequest()" nome="enviar" style="text-align: center;" value="ENTRAR"/>
+                </form>
+            </div>
+        </div>
+        <!-- REFERENCIANDO O JAVASCRIPT DA PÁGINA -->
+        <script src="./node_modules/axios/dist/axios.js"></script> 
+        <script src="./js/login_index.js"></script>
+    </body>
+</html>

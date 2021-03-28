@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #eff0f3;
+  color: #174dba;
+  -webkit-font-smothing: antialised;
+  margin: auto;
+}
+
+body,
+input,
+button {
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.usersPage {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  width: 100%;
+}
+
+.adminUsers {
+  max-width: 1600px;
+}
+
+header {
+  background: #174dba;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .logo {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header img {
+  width: 200px;
+}
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.adminUsers h1 {
+  font-family: "Helvetica Neue";
+  position: absolute;
+  top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.userBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.userBox .userImg {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background: #ffffff;
+}
+
+.userBox p {
+  font-family: "Helvetica Neue";
+  margin: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #174dba;
+}
+
+.userBox span {
+  margin: auto;
+  text-align: center;
+  color: #505050;
+  margin-bottom: 70px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: inherit;
+}
+
+.editButton {
+  margin-left: auto;
+  background: none;
+  color: inherit;
+}
+
+.editButton img {
+  margin: 15px;
+}
+
+.userList {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 30px;
+}
+
+@media (max-width: 450px) {
+  .userList {
+    -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 300px) {
+  .userList {
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+footer {
+  color: #505050;
+  text-align: end;
+  padding: 0px 20px 50px 50px;
+  grid-column: 1/-1;
+}
+/*# sourceMappingURL=login_usuario.css.map */
